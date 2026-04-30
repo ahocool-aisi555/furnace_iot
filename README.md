@@ -137,6 +137,9 @@ Untuk membaca kondisi relay on atau off atau sensor yang nilainya on/off (kontak
 # Bahan tambahan yang umum (tidak dibahas detail)
 
 - Relay Omron + Kontaktor
+- Relay delay 30 detik
+- PSU switching 12 volt
+- MCB 4 Ampere
 - Selenoid Gas valve 220v
 - Sensor + alarm gas yang ada kontrol relaynya
 - Pemantik komporgas + Busi nya
