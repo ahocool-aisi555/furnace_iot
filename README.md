@@ -28,18 +28,17 @@ Berhasil Masuk Final Nasional Program Penelitian Laboran <br>
 # Kontrol Suhu PID TK4S
 
 
-Metode tampilan : LED 4 digit 7-segmen <br>
-Metode kontrol : ON/OFF, P, PI, PD, PID<br>
-Spesifikasi Input : Thermocouple: K(CA), J(IC), E(CR), T(CC), B(PR), R(PR), S(PR), N(NN), C(TT), G(TT), L(IC), U(CC), Platinel II<br>
-RTD: DPt100Ω, DPt50Ω, JPt100Ω, Cu100Ω, Cu50Ω, Nikel 120Ω<br>
-Analog: 0-100mV, 0-5V, 1-5V, 0-10V
-0-20mA, 4-20mA<br>
-Siklus sampling : 50ms<br>
-Output kontrol 1 : Relai(250VAC~ 3A)<br>
-Pilihan output : Alarm 1, Transmission(DC4-20mA)<br>
-Catu daya : 100-240VAC~ 50/60Hz<br>
-Komunikasi Data : Rs485 Modbus RTU<br>
-Tingkat proteksi : IP65(panel depan)<br>
+- Metode tampilan : LED 4 digit 7-segmen <br>
+- Metode kontrol : ON/OFF, P, PI, PD, PID<br>
+- Spesifikasi Input : Thermocouple: K(CA), J(IC), E(CR), T(CC), B(PR), R(PR), S(PR), N(NN), C(TT), G(TT), L(IC), U(CC), Platinel II<br>
+- RTD: DPt100Ω, DPt50Ω, JPt100Ω, Cu100Ω, Cu50Ω, Nikel 120Ω<br>
+- Analog: 0-100mV, 0-5V, 1-5V, 0-10V 0-20mA, 4-20mA<br>
+- Siklus sampling : 50ms<br>
+- Output kontrol 1 : Relai(250VAC~ 3A)<br>
+- Pilihan output : Alarm 1, Transmission(DC4-20mA)<br>
+- Catu daya : 100-240VAC~ 50/60Hz<br>
+- Komunikasi Data : Rs485 Modbus RTU<br>
+- Tingkat proteksi : IP65(panel depan)<br>
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/-z_Roo9Zg1I/0.jpg)](https://www.youtube.com/watch?v=-z_Roo9Zg1I) <br> kilk gambar untuk ke video youtube
                                                                                               
@@ -50,14 +49,14 @@ Tingkat proteksi : IP65(panel depan)<br>
 
 <br>
 Specs: <br>
-802.11bgn Wireless Standard <br>
-STA/AP/AP+STA Mode <br>
-TCP/UDP/MQTT/HTTP/WebSocket Protocol <br>
-Modbus TCP to RTU, Modbus Master Function <br>
-RS485 To WiFi Conversion <br>
-Webpage Easy Configuration or PC IOTService Tool <br>
-Security Protocol Such As TLS/AES/DES3 <br>
-Industrial Temperature: -40 to +85˚ C <br>
+- 802.11bgn Wireless Standard <br>
+- STA/AP/AP+STA Mode <br>
+- TCP/UDP/MQTT/HTTP/WebSocket Protocol <br>
+- Modbus TCP to RTU, Modbus Master Function <br>
+- RS485 To WiFi Conversion <br>
+- Webpage Easy Configuration or PC IOTService Tool <br>
+- Security Protocol Such As TLS/AES/DES3 <br>
+- Industrial Temperature: -40 to +85˚ C <br>
 
 Seri PW11 hanya sebagai jembatan komunikasi Modbus RTU (PLC) menuju komunikasi berbasis TCP/IP.
 Butuh PLC kontroler sebagai Modbus master atau alat I/O modbus dapat me-schedule pengiriman data.
@@ -135,6 +134,16 @@ Untuk membaca kondisi relay on atau off atau sensor yang nilainya on/off (kontak
 
 <img width="804" height="565" alt="IO_expansion" src="https://github.com/user-attachments/assets/a637a51d-09e6-4fa2-94ae-44856c2997af" />
 
+# Bahan tambahan yang umum (tidak dibahas detail)
+
+- Relay Omron + Kontaktor
+- Selenoid Gas valve 220v
+- Sensor + alarm gas yang ada kontrol relaynya
+- Pemantik komporgas + Busi nya
+- Pilot burner untuk kompor gas ( fungsinya backup jika pemantik gagal menghidupkan gas )
+- Berbagai macam nipple dan percabangan kabel Gas
+- Blower angin untuk penambah panas ke burner
+- Tungku tanur / furnace dengan ujung gas burner
 
 # On Progress
 
