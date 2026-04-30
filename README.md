@@ -29,6 +29,26 @@ Berhasil Masuk Final Nasional Program Penelitian Laboran <br>
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/-z_Roo9Zg1I/0.jpg)](https://www.youtube.com/watch?v=-z_Roo9Zg1I)
 
+# Protos PW 11 IOT Gateway
+
+<img width="697" height="560" alt="protosPW11" src="https://github.com/user-attachments/assets/624044dc-5baf-43dc-a044-bb15d649137c" />
+
+<br>
+Specs: <br>
+802.11bgn Wireless Standard <br>
+STA/AP/AP+STA Mode <br>
+TCP/UDP/MQTT/HTTP/WebSocket Protocol <br>
+Modbus TCP to RTU, Modbus Master Function <br>
+RS485 To WiFi Conversion <br>
+Webpage Easy Configuration or PC IOTService Tool <br>
+Security Protocol Such As TLS/AES/DES3 <br>
+Industrial Temperature: -40 to +85˚ C <br>
+
+Seri PW11 hanya sebagai jembatan komunikasi Modbus RTU (PLC) menuju komunikasi berbasis TCP/IP.
+Butuh PLC kontroler sebagai Modbus master atau alat I/O modbus dapat me-schedule pengiriman data.
+RS485 dapat di model cascade ke banyak perangkat  dengan jarak jauh ( ~1 km). Akan dibahas cara settingnya pada github tersendiri.  
+
+
 # Monitoring IOT
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OqzBcb2V9yw/0.jpg)](https://www.youtube.com/watch?v=OqzBcb2V9yw)
