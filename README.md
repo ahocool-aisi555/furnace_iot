@@ -123,7 +123,7 @@ END
 # Monitoring IOT
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OqzBcb2V9yw/0.jpg)](https://www.youtube.com/watch?v=OqzBcb2V9yw)
-
+<br> Klik pada gambar untuk ke youtubenya
 # On Progress
 
 ..Harap bersabar masih dalam penyusunan github, pelan-pelan saya kumpulkan materinya
