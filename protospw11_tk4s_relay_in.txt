@@ -1,0 +1,90 @@
+# Ini skrip khusus untuk IOT Gateway porotos PW11
+# Untuk membaca TK4S di address 1 dan IO expasion di address 2
+# by Nyoman yudi kurniawan -2025
+# www.aisi555.com
+
+baca_suhu = [0x01, 0x04, 0x03, 0xE8, 0x00, 0x01, 0xB1, 0xBA]
+PAYLOAD_TEMP = "1"
+PETIK = [0x22]
+
+RECV UART uart0
+    RAW = INPUT
+    LEN = RAW.length()
+
+    IF (LEN < 7)
+        RETURN(FALSE)
+    END
+	
+	ADDR_HEX = RAW.charAt(0)
+
+    
+	IF (ADDR_HEX == 0x01)    
+ 	    # contoh penerimaan data  01 04 02 00 1F F8 F8 
+		
+		FC = RAW.charAt(1)
+		BYTE_SIZE = RAW.charAt(2)
+		
+		IF (FC != 0x04) # FC 04 = Read Input Registers 
+			RETURN(FALSE) 
+		END  
+        
+		IF (BYTE_SIZE != 0x02) # 2 data bytes expected
+			RETURN(FALSE) 
+	    END  
+
+        # Extract high and low bytes (big-endian: [3]=high, [4]=low)
+        TEMP_HIGH = RAW.charAt(3)
+        TEMP_LOW = RAW.charAt(4)
+
+        TEMP_HIGHH = TEMP_HIGH << 8
+
+        TEMP_RAW = TEMP_HIGHH | TEMP_LOW
+		PAYLOAD_TEMP =  TEMP_RAW.prtString()
+		
+
+	END
+	
+	IF (ADDR_HEX == 0x14)
+    
+        DATA_BYTE = RAW.charAt(4)
+		
+		IF (DATA_BYTE == 0)
+			REL1=PETIK +"OFF" + PETIK 
+			REL2=PETIK +"OFF" + PETIK 
+		END
+		
+		IF (DATA_BYTE == 1)
+			REL1=PETIK +"ON" + PETIK 
+			REL2=PETIK +"OFF" + PETIK 
+		END
+		
+		IF (DATA_BYTE == 2)
+			REL1=PETIK +"OFF" + PETIK 
+			REL2=PETIK +"ON" + PETIK 
+		END
+
+		IF (DATA_BYTE == 3)
+			REL1=PETIK + "ON" + PETIK 
+			REL2=PETIK +"ON" + PETIK 
+		END
+	
+	
+		PAYLOAD ="{" + PETIK + "SUHU" + PETIK + ":" + PAYLOAD_TEMP + "," + PETIK + "REL1" + PETIK + ":" +REL1+   "," + PETIK + "REL2" + PETIK + ":" + REL2 + "}"
+
+		SEND(SOCK, netp, PAYLOAD)
+	
+	
+	
+	
+	END
+	
+	
+	RETURN(TRUE)
+
+END
+
+
+TIMER read_temp 4213
+     
+    SEND(UART,uart0, baca_suhu) 
+END
