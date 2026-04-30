@@ -120,10 +120,22 @@ TIMER read_temp 10000
 END
 ```
 
-# Monitoring IOT
+# Monitoring IOT - Protokol MQTT
+
+<img width="1320" height="566" alt="web_UI" src="https://github.com/user-attachments/assets/a29e6f6c-1770-4b78-afcc-1828258ba3de" />
+
+<br>
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OqzBcb2V9yw/0.jpg)](https://www.youtube.com/watch?v=OqzBcb2V9yw)
 <br> Klik pada gambar untuk ke youtubenya
+
+# Modbus I/O expansion modul
+
+Untuk membaca kondisi relay on atau off atau sensor yang nilainya on/off (kontak) maka ditambahkan modul expansion untuk modbus
+
+<img width="804" height="565" alt="IO_expansion" src="https://github.com/user-attachments/assets/a637a51d-09e6-4fa2-94ae-44856c2997af" />
+
+
 # On Progress
 
 ..Harap bersabar masih dalam penyusunan github, pelan-pelan saya kumpulkan materinya
