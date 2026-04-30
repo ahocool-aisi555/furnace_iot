@@ -130,7 +130,7 @@ END
 
 # Modbus I/O expansion modul
 
-Untuk membaca kondisi relay on atau off atau sensor yang nilainya on/off (kontak) maka ditambahkan modul expansion untuk modbus
+Untuk membaca kondisi relay on atau off atau sensor yang nilainya digital on/off (kontak) maka ditambahkan modul Input Digital yang memiliki jalur komunikasi modbus RTU
 
 <img width="804" height="565" alt="IO_expansion" src="https://github.com/user-attachments/assets/a637a51d-09e6-4fa2-94ae-44856c2997af" />
 
