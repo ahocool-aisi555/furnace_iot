@@ -95,7 +95,7 @@ RECV UART uart0
         
 		  IF (BYTE_SIZE != 0x02) # 2 data bytes expected
 			   RETURN(FALSE) 
-	    END  
+	      END  
 
        # Extract high and low bytes (big-endian: [3]=high, [4]=low)
        TEMP_HIGH = RAW.charAt(3)
@@ -105,9 +105,9 @@ RECV UART uart0
        TEMP_RAW = TEMP_HIGHH | TEMP_LOW
        PAYLOAD =  TEMP_RAW.prtString()
 
-      SEND(SOCK, netp, PAYLOAD) # Kirim text suhu ke profile netp
+       SEND(SOCK, netp, PAYLOAD) # Kirim text suhu ke profile netp
 
-	   END
+      END
 	
 	 RETURN(TRUE)
 END
@@ -142,12 +142,13 @@ Untuk membaca kondisi relay on atau off atau sensor yang nilainya on/off (kontak
 - MCB 4 Ampere
 - Selenoid Gas valve 220v
 - Sensor + alarm gas yang ada kontrol relaynya
-- Pemantik komporgas + Busi nya
-- Pilot burner untuk kompor gas ( fungsinya backup jika pemantik gagal menghidupkan gas )
+- Pemantik komporgas + Busi pemantik
+- Pilot lamp burner untuk kompor gas ( fungsinya backup jika pemantik gagal menghidupkan gas )
 - Berbagai macam nipple dan percabangan kabel Gas
 - Blower angin untuk penambah panas ke burner
 - Tungku tanur / furnace dengan ujung gas burner
 
-# On Progress
+# HAKI
 
-..Harap bersabar masih dalam penyusunan github, pelan-pelan saya kumpulkan materinya
+**No Pencatatan Ciptaan : EC002025188840, 21 November 2025** <br>
+Nama Pemegang :  Ketut Gunawan , Ketut Dharma Yuliawan, I Gede Siden Sudaryana, Ketut Udy Ariawan, Nyoman Yudi Kurniawan 
