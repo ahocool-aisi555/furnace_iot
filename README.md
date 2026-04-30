@@ -25,7 +25,13 @@ Berhasil Masuk Final Nasional Program Penelitian Laboran <br>
 
 <img width="2272" height="1557" alt="sch_furnace" src="https://github.com/user-attachments/assets/b9f1753c-5cb2-4c98-80d1-01960d4aa069" />
 
+# Kontrol Suhu PID TK4S
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/-z_Roo9Zg1I/0.jpg)](https://www.youtube.com/watch?v=-z_Roo9Zg1I)
+
+# Monitoring IOT
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/OqzBcb2V9yw/0.jpg)](https://www.youtube.com/watch?v=OqzBcb2V9yw)
 
 # On Progress
 
