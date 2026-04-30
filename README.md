@@ -8,9 +8,9 @@ Berhasil Masuk Final Nasional Program Penelitian Laboran <br>
 # Cara Kerja Sistem Secara Umum
 
 1. Alat yang dirancang menggunakan alat kontrol industri siap pakai tanpa melibatkan mikrokontroler <br>
-2. Sistem akan melakukan kontrol aliran gas ke pembakar / burner dengan output suhu yang dapat ditentukan pengguna dan akan dicapai suhu yang sesuai pengan prinsip PID<br>
-3. Sistem juga akan memberikan pelaporan secara IOT melalui Modbus IOT Gateway ke monitoring yang dapat di remote dari manapun
-4. Terdapat pengaman sensor kebocoran gas yang akan memutus aliran gas jika terdeteksi<br>
+2. Sistem akan melakukan kontrol aliran gas ke pembakar / burner dengan output suhu yang dapat ditentukan pengguna dan sistem akan menuju ke suhu yang sesuai pengan prinsip P-I-D<br>
+3. Sistem juga akan memberikan pelaporan secara IOT melalui Modbus IOT Gateway ke monitoring/Smartphone/PC yang dapat di remote dari manapun
+4. Terdapat pengaman sensor kebocoran gas yang akan memutus aliran gas jika terdeteksi gas LPG/Butana<br>
 
 <img width="2258" height="1584" alt="flowchart_gun" src="https://github.com/user-attachments/assets/482c074c-f88c-44a8-af09-e9842c6ab972" />
 
